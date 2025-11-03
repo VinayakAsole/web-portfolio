@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume | Vinayak Suresh Asole</title>
+    <meta name="description" content="Resume of Vinayak Suresh Asole - Web Developer and Engineering Student" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .resume-page { padding: 32px 0 60px; }
+      .resume { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 24px; display: grid; gap: 18px; }
+      .resume header h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
+      .resume .meta { color: var(--muted); margin: 6px 0 0; }
+      .resume .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+      .resume section h2 { margin: 0 0 6px; font-size: 18px; letter-spacing: -.01em; }
+      .resume ul { margin: 0; padding-left: 18px; }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+      .resume .kv { display: grid; grid-template-columns: 140px 1fr; gap: 8px; }
+      .resume .kv b { color: var(--muted); font-weight: 600; }
+      .edu-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+      .edu-table th, .edu-table td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; }
+      .badge-row { display: flex; flex-wrap: wrap; gap: 8px; }
+      .badge { padding: 6px 10px; border: 1px solid var(--line); border-radius: 999px; font-size: 12px; background: rgba(255,255,255,.04); color: var(--muted); }
+      .resume footer { color: var(--muted); font-size: 13px; }
+      .resume .subtle { color: var(--muted); }
+      .resume .section-card { background: color-mix(in oklab, var(--panel) 92%, #0000); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+      @media print {
+        body { background: #fff; }
+        .site-actions, .site-footer { display: none !important; }
+        .resume { border: 0; padding: 0; border-radius: 0; }
+        .resume-page { padding: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site-actions container" style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;">
+      <a class="button" href="index.html">← Back to Portfolio</a>
+      <div>
+        <button class="button" onclick="window.print()">Print / Save as PDF</button>
+      </div>
+    </div>
+
+    <main class="resume-page">
+      <div class="container">
+        <article class="resume">
+          <header>
+            <h1>Vinayak Suresh Asole</h1>
+            <p class="meta">Web Developer (HTML, CSS, JavaScript) • Engineering Student</p>
+            <div class="badge-row" style="margin-top:8px;">
+              <a class="badge" href="mailto:vinayakasole1@gmail.com">vinayakasole1@gmail.com</a>
+              <a class="badge" href="tel:+919373997279">+91 93739 97279</a>
+              <a class="badge" href="https://github.com/VinayakAsole" target="_blank" rel="noopener">github.com/VinayakAsole</a>
+            </div>
+          </header>
+
+          <section class="section-card">
+            <h2>Objective</h2>
+            <p>I seek challenging opportunities where I can fully use my skills for the success of the organization, while continuously learning new technologies and improving my craft.</p>
+          </section>
+
+          <section class="two-col">
+            <div class="section-card">
+              <h2>Skills</h2>
+              <ul>
+                <li>Web Development: HTML, CSS, JavaScript</li>
+                <li>Electrician maintenance; Wiring & line fitting</li>
+                <li>Teaching and mentorship</li>
+              </ul>
+            </div>
+            <div class="section-card">
+              <h2>Languages</h2>
+              <ul>
+                <li>Marathi</li>
+                <li>English</li>
+                <li>Hindi</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section-card">
+            <h2>Education</h2>
+            <table class="edu-table">
+              <thead>
+                <tr>
+                  <th>Course</th>
+                  <th>College</th>
+                  <th>Board/University</th>
+                  <th>Year</th>
+                  <th>Percentage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>SSC</td>
+                  <td>Late V.B.G. Highschool, Darwha</td>
+                  <td>Amaravati</td>
+                  <td>2018</td>
+                  <td>65%</td>
+                </tr>
+                <tr>
+                  <td>ITI (Electrician)</td>
+                  <td>P.G.I.T.C Wadhona (Ramnath), Dist. Amravati</td>
+                  <td>NCVT</td>
+                  <td>2020</td>
+                  <td>85%</td>
+                </tr>
+                <tr>
+                  <td>CITS (Electrician)</td>
+                  <td>GOV. ITOT, Bhopal</td>
+                  <td>Delhi</td>
+                  <td>2022</td>
+                  <td>82%</td>
+                </tr>
+                <tr>
+                  <td>Diploma (Computer Science)</td>
+                  <td>Gov. Polytechnic, Yavatmal</td>
+                  <td>MSBTE</td>
+                  <td>2025</td>
+                  <td>79.27%</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section class="section-card">
+            <h2>Projects</h2>
+            <div>
+              <h3 style="margin:0 0 4px;">Lazeez kitchen's — Cafe Management System</h3>
+              <p class="subtle" style="margin:0 0 6px;">Student project • Web app (orders, menu, billing, reports)</p>
+              <ul>
+                <li>Designed order flow, menu CRUD, billing receipts, and daily sales summary.</li>
+                <li>Prioritized usability for staff: clear navigation, keyboard shortcuts, fast actions.</li>
+                <li>Built responsive UI components; planned data model for items, orders, and sessions.</li>
+              </ul>
+            </div>
+            <div style="height:8px;"></div>
+            <div>
+              <h3 style="margin:0 0 4px;">LIGHT FIDELITY (Li‑Fi)</h3>
+              <p class="subtle" style="margin:0 0 6px;">Audio transmission via LED/IR light (2011‑inspired, built during ITI)</p>
+              <ul>
+                <li>Bidirectional wireless prototype that transmits audio over light waves using LED/IR.</li>
+                <li>Demonstrated low‑interference data transfer without radio frequencies.</li>
+              </ul>
+            </div>
+            <div style="margin-top:10px;">
+              <h3 style="margin:0 0 4px;">Simple Attendance Management App</h3>
+              <p class="subtle" style="margin:0 0 6px;">Java, Android XML, SQLite (no API)</p>
+              <ul>
+                <li>Role‑based login for Admin, Teacher, and Student dashboards.</li>
+                <li>Offline storage with SQLite; daily attendance and monthly summaries.</li>
+                <li>User‑friendly XML layouts for fast on‑device interactions.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="two-col">
+            <div class="section-card">
+              <h2>Experience (Student)</h2>
+              <ul>
+                <li>Student Developer — Academic Projects (2023–Present): delivered responsive web apps and prototypes.</li>
+                <li>Project Lead — Lazeez kitchen's: owned UX, feature planning, and testing.</li>
+              </ul>
+            </div>
+            <div class="section-card">
+              <h2>Achievements & Awards</h2>
+              <ul>
+                <li>MSCIT – June 2018</li>
+                <li>Elementary Drawing Grade – 2014</li>
+                <li>Intermediate Drawing Grade – 2015</li>
+                <li>Participant, Vidarbha‑level Vedic Math Competition – 2016</li>
+                <li>Cloud Skills Boost: <a href="https://www.cloudskillsboost.google/public_profiles/2147539b-20c2-4d00-ba6c2a5ca4a02a41" target="_blank" rel="noopener">Profile</a> (2023‑25)</li>
+              </ul>
+            </div>
+            <div class="section-card">
+              <h2>Strengths</h2>
+              <ul>
+                <li>Creativity and problem‑solving</li>
+                <li>Fast learner; curiosity for new tech</li>
+                <li>Flexibility and dedication</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section-card">
+            <h2>Personal Details</h2>
+            <div class="kv">
+              <b>Name</b><span>Vinayak Suresh Asole</span>
+              <b>Date of Birth</b><span>10/09/2002</span>
+              <b>Marital Status</b><span>Single</span>
+              <b>Nationality</b><span>Indian</span>
+              <b>Address</b><span>Sapanmurti Nagar, Tq. Darwha, Dist. Yavatmal</span>
+            </div>
+          </section>
+
+          <footer>
+            <p>Declaration: I declare that the facts stated above are true and correct to the best of my knowledge and belief.</p>
+            <p class="subtle">Date: ____________ &nbsp; | &nbsp; Place: ____________ &nbsp; | &nbsp; Signature: Vinayak S. Asole</p>
+          </footer>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Vinayak Asole</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
+
+

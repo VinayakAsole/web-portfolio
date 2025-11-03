@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio | Software Developer</title>
+    <meta name="description" content="Software Developer Portfolio - Projects, Skills, Experience, and Contact." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="#" class="brand" aria-label="Homepage">
+          <span class="logo" aria-hidden="true">SD</span>
+          <span class="brand-text">Software Developer</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+          <ul id="navMenu" class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="themeToggle" class="button ghost" type="button" aria-label="Toggle dark mode">🌗</button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container reveal" aria-label="Intro">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Hi, I’m</p>
+            <h1 class="gradient-text">Vinayak Asole</h1>
+            <p class="subtitle">Software Developer • Engineering Student</p>
+            <p class="lede">
+              I build reliable, user‑centric web experiences with clean code and thoughtful design. Open to internships and full‑time roles.
+            </p>
+            <div class="hero-cta">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button" href="#contact">Contact Me</a>
+              <a class="button ghost" href="resume.html" target="_blank" rel="noopener">Download CV</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="avatar tilt" aria-hidden="true">
+              <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Profile avatar placeholder" />
+            </div>
+            <ul class="quick-stats">
+              <li><span class="stat">5+</span> Projects</li>
+              <li><span class="stat">3+</span> Internships</li>
+              <li><span class="stat">1+</span> Awards</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section container reveal">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>Blending engineering fundamentals with modern web development to deliver performant, accessible apps.</p>
+        </div>
+        <div class="about-grid">
+          <p>
+            I’m a software developer and engineering student focused on building high‑quality web applications. I enjoy solving real problems, writing maintainable code, and collaborating in diverse teams. Currently learning advanced frontend architectures and backend services.
+          </p>
+          <ul class="highlights">
+            <li>Strong with HTML, CSS, JavaScript, and React fundamentals</li>
+            <li>Experience with REST APIs, Node.js, and databases</li>
+            <li>Accessibility‑first mindset and responsive design</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="section container reveal">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p>Technologies I use regularly.</p>
+        </div>
+        <div class="chip-cloud">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">Git & GitHub</span>
+          <span class="chip">Testing</span>
+          <span class="chip">Accessibility</span>
+        </div>
+      </section>
+
+      <section id="projects" class="section container reveal">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>Selected work that showcases impact and craft.</p>
+        </div>
+        <div class="cards">
+          <article class="card tilt">
+            <div class="card-media" role="img" aria-label="Web portfolio preview"><img src="assets/web-portfolio-thumb.svg" alt="Web portfolio thumbnail" /></div>
+            <div class="card-body">
+              <h3>web-portfolio</h3>
+              <p>Modern personal portfolio with dark mode, animations, and responsive design.</p>
+              <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="card-actions">
+                <a class="button small" href="https://vinayakasole.github.io/web-portfolio/" target="_blank" rel="noopener">Live</a>
+                <a class="button small ghost" href="https://github.com/VinayakAsole/web-portfolio" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+          <article class="card tilt">
+            <div class="card-media" role="img" aria-label="Cafe management system preview"></div>
+            <div class="card-body">
+              <h3>Lazeez kitchen's — Cafe Management System</h3>
+              <p>Student project to manage orders, menu, billing, and daily reports.</p>
+              <div class="card-tags"><span>Web App</span><span>JavaScript</span><span>UI/UX</span></div>
+              <div class="card-actions">
+                <a class="button small ghost" href="#" aria-disabled="true">Live (coming soon)</a>
+              </div>
+            </div>
+          </article>
+          <article class="card tilt">
+            <div class="card-media" role="img" aria-label="Restaurant website preview"></div>
+            <div class="card-body">
+              <h3>restorent-website</h3>
+              <p>Simple responsive restaurant landing page with menus and CTAs.</p>
+              <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="card-actions">
+                <a class="button small ghost" href="https://github.com/VinayakAsole/restorent-website" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+          <article class="card tilt">
+            <div class="card-media" role="img" aria-label="Math riddle app preview"></div>
+            <div class="card-body">
+              <h3>mathRiddle</h3>
+              <p>Interactive math riddles mini‑app built with TypeScript.</p>
+              <div class="card-tags"><span>TypeScript</span><span>Logic</span></div>
+              <div class="card-actions">
+                <a class="button small ghost" href="https://github.com/VinayakAsole/mathRiddle" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+          <article class="card tilt">
+            <div class="card-media" role="img" aria-label="Riddle game preview"></div>
+            <div class="card-body">
+              <h3>simple-riddle-game</h3>
+              <p>Basic riddle game demonstrating state and DOM updates.</p>
+              <div class="card-tags"><span>JavaScript</span><span>DOM</span></div>
+              <div class="card-actions">
+                <a class="button small" href="https://vinayakasole.github.io/simple-riddle-game/" target="_blank" rel="noopener">Live</a>
+                <a class="button small ghost" href="https://github.com/VinayakAsole/simple-riddle-game" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section container reveal">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p>Roles where I shipped value.</p>
+        </div>
+        <div class="timeline">
+          <article class="time-item">
+            <h3>Student Developer <span>@ Academic Projects</span></h3>
+            <p class="meta">2023 – Present</p>
+            <ul>
+              <li>Built web apps with HTML, CSS, JavaScript focusing on clean UI and responsive layouts.</li>
+              <li>Collaborated with classmates on requirements, feature planning, and testing.</li>
+            </ul>
+          </article>
+          <article class="time-item">
+            <h3>Project Lead <span>— Lazeez kitchen's (Cafe Management)</span></h3>
+            <p class="meta">Current</p>
+            <ul>
+              <li>Designing order flow, menu CRUD, billing receipts, and daily sales summary.</li>
+              <li>Prioritizing usability for staff with keyboard shortcuts and clear navigation.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section container reveal">
+        <div class="section-head">
+          <h2>Education</h2>
+          <p>Engineering student with strong CS fundamentals.</p>
+        </div>
+        <ul class="edu-list">
+          <li>
+            <h3>B.E. / B.Tech in Engineering</h3>
+            <p class="meta">Your University • 2022 – 2026</p>
+            <p>Relevant coursework: Data Structures, Algorithms, DBMS, Operating Systems, Networks.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section container reveal">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Let’s build something great. I’m available for roles and collaborations.</p>
+        </div>
+        <form class="contact" name="contact" aria-label="Contact form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="actions">
+            <button class="button primary" type="submit">Send Message</button>
+          </div>
+          <p class="form-note">Or reach me directly: <a href="mailto:vinayakasole1@gmail.com">vinayakasole1@gmail.com</a> · <a href="tel:+919373997279">+91 93739 97279</a></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Vinayak Asole • Built with HTML, CSS & JS</p>
+        <ul class="social">
+          <li><a href="https://github.com/VinayakAsole" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+  </html>
+
+
