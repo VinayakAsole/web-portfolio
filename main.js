@@ -57,22 +57,67 @@ document.querySelectorAll('.tilt').forEach((el) => {
   el.addEventListener('mouseleave', resetTilt);
 });
 
-// Basic client-side validation feedback for contact form
-const form = document.querySelector('form.contact');
-if (form) {
+// Contact form → send via EmailJS (if configured), else fallback to mailto
+(function setupContactForm() {
+  const form = document.querySelector('form.contact');
+  if (!form) return;
+
+  const EMAIL_TO = 'vinayakasole1@gmail.com';
+  const EMAILJS_PUBLIC_KEY = 'uT_C_YZTAU5VXiYBq';
+  const EMAILJS_SERVICE_ID = 'service_i38v07n';
+  const EMAILJS_TEMPLATE_ID = 'template_xy0fay9';
+
+  function loadEmailJs(callback) {
+    if (window.emailjs) { callback(); return; }
+    const s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js';
+    s.onload = callback;
+    document.head.appendChild(s);
+  }
+
+  function sendWithMailto(name, fromEmail, message) {
+    const subject = `New message from ${name}`;
+    const body = `Name: ${name}%0D%0AEmail: ${fromEmail}%0D%0A%0D%0A${encodeURIComponent(message)}`;
+    window.location.href = `mailto:${EMAIL_TO}?subject=${encodeURIComponent(subject)}&body=${body}`;
+  }
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const data = new FormData(form);
     const name = String(data.get('name') || '').trim();
-    const email = String(data.get('email') || '').trim();
+    const fromEmail = String(data.get('email') || '').trim();
     const message = String(data.get('message') || '').trim();
-    if (!name || !email || !message) {
-      alert('Please fill in all fields.');
-      return;
-    }
-    alert('Thanks! Your message has been prepared. Connect via email: you@example.com');
-    form.reset();
+    if (!name || !fromEmail || !message) { alert('Please fill in all fields.'); return; }
+
+    const emailJsConfigured = EMAILJS_PUBLIC_KEY && EMAILJS_SERVICE_ID && EMAILJS_TEMPLATE_ID;
+    if (!emailJsConfigured) { sendWithMailto(name, fromEmail, message); return; }
+
+    loadEmailJs(() => {
+      try {
+        // eslint-disable-next-line no-undef
+        emailjs.init(EMAILJS_PUBLIC_KEY);
+        const params = {
+          to_email: EMAIL_TO,
+          from_name: name,
+          reply_to: fromEmail,
+          message,
+        };
+        // eslint-disable-next-line no-undef
+        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
+          .then(() => {
+            alert('Thanks! Your message has been sent.');
+            form.reset();
+          })
+          .catch(() => {
+            alert('Could not send via EmailJS. Opening your email app...');
+            sendWithMailto(name, fromEmail, message);
+          });
+      } catch (_err) {
+        alert('Could not send via EmailJS. Opening your email app...');
+        sendWithMailto(name, fromEmail, message);
+      }
+    });
   });
-}
+})();
 
 
