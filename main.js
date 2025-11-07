@@ -76,14 +76,23 @@ document.querySelectorAll('.tilt').forEach((el) => {
   }
 
   function sendWithMailto(name, fromEmail, location, message) {
-    const subject = `New message from ${name}`;
+    const subject = `New Contact Form Message from ${name} (${fromEmail})`;
     let body = `Contact Form Submission%0D%0A%0D%0A`;
-    body += `From: ${name}%0D%0A`;
+    body += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━%0D%0A`;
+    body += `SENDER DETAILS%0D%0A`;
+    body += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━%0D%0A%0D%0A`;
+    body += `Name: ${name}%0D%0A`;
     body += `Email: ${fromEmail}%0D%0A`;
     if (location) {
       body += `Location: ${location}%0D%0A`;
     }
-    body += `%0D%0A--- Message ---%0D%0A${encodeURIComponent(message)}`;
+    body += `%0D%0A━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━%0D%0A`;
+    body += `MESSAGE%0D%0A`;
+    body += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━%0D%0A%0D%0A`;
+    body += `${encodeURIComponent(message)}%0D%0A%0D%0A`;
+    body += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━%0D%0A`;
+    body += `Reply to: ${fromEmail}%0D%0A`;
+    body += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
     window.location.href = `mailto:${EMAIL_TO}?subject=${encodeURIComponent(subject)}&body=${body}`;
   }
 
@@ -108,10 +117,13 @@ document.querySelectorAll('.tilt').forEach((el) => {
           from_name: name,
           from_email: fromEmail,
           reply_to: fromEmail,
+          sender_email: fromEmail,
           location: location || 'Not provided',
           message,
-          // Formatted message with all sender details
-          formatted_message: `Contact Form Submission\n\nFrom: ${name}\nEmail: ${fromEmail}\nLocation: ${location || 'Not provided'}\n\n--- Message ---\n${message}`,
+          // Subject with sender email
+          subject: `New Contact Form Message from ${name} (${fromEmail})`,
+          // Formatted message with all sender details prominently displayed
+          formatted_message: `Contact Form Submission\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nSENDER DETAILS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nName: ${name}\nEmail: ${fromEmail}\nLocation: ${location || 'Not provided'}\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nMESSAGE\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n${message}\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nReply to: ${fromEmail}\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
         };
         // eslint-disable-next-line no-undef
         emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
