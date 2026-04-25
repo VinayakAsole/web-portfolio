@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio | Software Developer</title>
-    <meta name="description" content="Software Developer Portfolio - Projects, Skills, Experience, and Contact." />
+    <title>Vinayak Asole | Software Developer Portfolio</title>
+    <meta name="description" content="Vinayak Asole — Software Developer & Engineering Student. Explore projects, skills, and experience." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -15,8 +15,8 @@
     <header class="site-header" role="banner">
       <div class="container header-inner">
         <a href="#" class="brand" aria-label="Homepage">
-          <span class="logo" aria-hidden="true">SD</span>
-          <span class="brand-text">Software Developer</span>
+          <span class="logo" aria-hidden="true">VA</span>
+          <span class="brand-text">Vinayak Asole</span>
         </a>
         <nav class="nav" aria-label="Primary">
           <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
@@ -26,6 +26,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#github-repos">GitHub</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -36,10 +37,11 @@
     </header>
 
     <main id="main">
+      <!-- ── HERO ── -->
       <section class="hero container reveal" aria-label="Intro">
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Hi, I’m</p>
+            <p class="eyebrow">Hi, I'm</p>
             <h1 class="gradient-text">Vinayak Asole</h1>
             <p class="subtitle">Software Developer • Engineering Student</p>
             <p class="lede">
@@ -56,7 +58,7 @@
               <img src="WhatsApp Image 2025-11-04 at 14.10.11_95d79c07.jpg" alt="Profile avatar placeholder" />
             </div>
             <ul class="quick-stats">
-              <li><span class="stat">5+</span> Projects</li>
+              <li><span class="stat">8+</span> Projects</li>
               <li><span class="stat">3+</span> Internships</li>
               <li><span class="stat">1+</span> Awards</li>
             </ul>
@@ -64,6 +66,7 @@
         </div>
       </section>
 
+      <!-- ── ABOUT ── -->
       <section id="about" class="section container reveal">
         <div class="section-head">
           <h2>About</h2>
@@ -71,108 +74,123 @@
         </div>
         <div class="about-grid">
           <p>
-            I’m a software developer and engineering student focused on building high‑quality web applications. I enjoy solving real problems, writing maintainable code, and collaborating in diverse teams. Currently learning advanced frontend architectures and backend services.
+            I'm a software developer and engineering student focused on building high‑quality web applications. I enjoy solving real problems, writing maintainable code, and collaborating in diverse teams. Currently learning advanced frontend architectures and backend services.
           </p>
           <ul class="highlights">
             <li>Strong with HTML, CSS, JavaScript, and React fundamentals</li>
             <li>Experience with REST APIs, Node.js, and databases</li>
             <li>Accessibility‑first mindset and responsive design</li>
+            <li>Active open-source contributor on GitHub</li>
           </ul>
         </div>
       </section>
 
+      <!-- ── SKILLS ── -->
       <section id="skills" class="section container reveal">
         <div class="section-head">
           <h2>Skills</h2>
           <p>Technologies I use regularly.</p>
         </div>
-        <div class="chip-cloud">
-          <span class="chip">HTML5</span>
-          <span class="chip">CSS3</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">TypeScript</span>
-          <span class="chip">React</span>
-          <span class="chip">Node.js</span>
-          <span class="chip">Express</span>
-          <span class="chip">MongoDB</span>
-          <span class="chip">PostgreSQL</span>
-          <span class="chip">Git & GitHub</span>
-          <span class="chip">Testing</span>
-          <span class="chip">Accessibility</span>
+        <div class="skills-categories">
+          <div class="skill-group">
+            <h4 class="skill-group-label">Frontend</h4>
+            <div class="chip-cloud">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3 / SCSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">React</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4 class="skill-group-label">Backend & DB</h4>
+            <div class="chip-cloud">
+              <span class="chip">Node.js</span>
+              <span class="chip">Express</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Firebase</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4 class="skill-group-label">Tools</h4>
+            <div class="chip-cloud">
+              <span class="chip">Git & GitHub</span>
+              <span class="chip">Testing</span>
+              <span class="chip">Accessibility</span>
+              <span class="chip">C / DSA</span>
+            </div>
+          </div>
         </div>
       </section>
 
+      <!-- ── FEATURED PROJECTS ── -->
       <section id="projects" class="section container reveal">
         <div class="section-head">
-          <h2>Projects</h2>
+          <h2>Featured Projects</h2>
           <p>Selected work that showcases impact and craft.</p>
         </div>
         <div class="cards">
-          <article class="card tilt">
-            <div class="card-media" role="img" aria-label="Web portfolio preview"><img src="assets/web-portfolio-thumb.svg" alt="Web portfolio thumbnail" /></div>
+          <!-- Web Portfolio -->
+          <article class="card tilt card-featured">
+            <div class="card-media card-media--portfolio" role="img" aria-label="Web portfolio preview">
+              <div class="card-media-inner">
+                <span class="card-icon">🌐</span>
+                <span class="card-media-label">Portfolio</span>
+              </div>
+            </div>
             <div class="card-body">
-              <h3>web-portfolio</h3>
-              <p>Modern personal portfolio with dark mode, animations, and responsive design.</p>
+              <div class="card-header-row">
+                <h3>web-portfolio</h3>
+                <span class="card-badge card-badge--featured">Featured</span>
+              </div>
+              <p>Modern personal portfolio with dark mode, tilt animations, chatbot, and responsive design.</p>
               <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
               <div class="card-actions">
-                <a class="button small" href="https://vinayakasole.github.io/web-portfolio/" target="_blank" rel="noopener">Live</a>
+                <a class="button small primary" href="https://vinayakasole.github.io/web-portfolio/" target="_blank" rel="noopener">🚀 Live</a>
                 <a class="button small ghost" href="https://github.com/VinayakAsole/web-portfolio" target="_blank" rel="noopener">Code</a>
               </div>
             </div>
           </article>
+
+          <!-- Lazeez Kitchen -->
           <article class="card tilt">
-            <div class="card-media" role="img" aria-label="Cafe management system preview"><img src="https://via.placeholder.com/640x360?text=Cafe+Management+System" alt="Cafe Management System preview" /></div>
+            <div class="card-media card-media--cafe" role="img" aria-label="Cafe management system preview">
+              <div class="card-media-inner">
+                <span class="card-icon">☕</span>
+                <span class="card-media-label">Cafe</span>
+              </div>
+            </div>
             <div class="card-body">
-              <h3>Lazeez kitchen's — Cafe Management System</h3>
-              <p>Student project to manage orders, menu, billing, and daily reports.</p>
+              <div class="card-header-row">
+                <h3>Lazeez kitchen's</h3>
+                <span class="card-badge card-badge--wip">In Progress</span>
+              </div>
+              <p>Cafe Management System — manages orders, menu, billing, and daily sales reports for staff.</p>
               <div class="card-tags"><span>Web App</span><span>JavaScript</span><span>UI/UX</span></div>
               <div class="card-actions">
                 <a class="button small ghost" href="#" aria-disabled="true">Live (coming soon)</a>
               </div>
             </div>
           </article>
+
+          <!-- DSA Visualizer -->
           <article class="card tilt">
-            <div class="card-media" role="img" aria-label="Restaurant website preview"><img src="https://opengraph.githubassets.com/1/VinayakAsole/restorent-website" alt="restorent-website repository preview" /></div>
-            <div class="card-body">
-              <h3>restorent-website</h3>
-              <p>Simple responsive restaurant landing page with menus and CTAs.</p>
-              <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-              <div class="card-actions">
-                <a class="button small ghost" href="https://github.com/VinayakAsole/restorent-website" target="_blank" rel="noopener">Code</a>
+            <div class="card-media card-media--dsa" role="img" aria-label="DSA Visualizer in C preview">
+              <div class="card-media-inner">
+                <span class="card-icon">🔬</span>
+                <span class="card-media-label">DSA</span>
               </div>
             </div>
-          </article>
-          <article class="card tilt">
-            <div class="card-media" role="img" aria-label="Math riddle app preview"><img src="https://opengraph.githubassets.com/1/VinayakAsole/mathRiddle" alt="mathRiddle repository preview" /></div>
             <div class="card-body">
-              <h3>mathRiddle</h3>
-              <p>Interactive math riddles mini‑app built with TypeScript.</p>
-              <div class="card-tags"><span>TypeScript</span><span>Logic</span></div>
-              <div class="card-actions">
-                <a class="button small ghost" href="https://github.com/VinayakAsole/mathRiddle" target="_blank" rel="noopener">Code</a>
+              <div class="card-header-row">
+                <h3>DSA_Visualizer_in_C</h3>
+                <span class="card-badge card-badge--live">Live</span>
               </div>
-            </div>
-          </article>
-          <article class="card tilt">
-            <div class="card-media" role="img" aria-label="Riddle game preview"><img src="https://opengraph.githubassets.com/1/VinayakAsole/simple-riddle-game" alt="simple-riddle-game repository preview" /></div>
-            <div class="card-body">
-              <h3>simple-riddle-game</h3>
-              <p>Basic riddle game demonstrating state and DOM updates.</p>
-              <div class="card-tags"><span>JavaScript</span><span>DOM</span></div>
-              <div class="card-actions">
-                <a class="button small" href="https://vinayakasole.github.io/simple-riddle-game/" target="_blank" rel="noopener">Live</a>
-                <a class="button small ghost" href="https://github.com/VinayakAsole/simple-riddle-game" target="_blank" rel="noopener">Code</a>
-              </div>
-            </div>
-          </article>
-          <article class="card tilt">
-            <div class="card-media" role="img" aria-label="DSA Visualizer in C preview"><img src="https://opengraph.githubassets.com/1/VinayakAsole/DSA_Visualizer_in_C" alt="DSA_Visualizer_in_C repository preview" /></div>
-            <div class="card-body">
-              <h3>DSA_Visualizer_in_C</h3>
-              <p>Visualizer for common data structures and algorithms.</p>
+              <p>Interactive visualizer for common data structures and algorithms — step-by-step animations.</p>
               <div class="card-tags"><span>C</span><span>Algorithms</span><span>Visualization</span></div>
               <div class="card-actions">
-                <a class="button small" href="https://vinayakasole.github.io/DSA_Visualizer_in_C/" target="_blank" rel="noopener">Live</a>
+                <a class="button small primary" href="https://vinayakasole.github.io/DSA_Visualizer_in_C/" target="_blank" rel="noopener">🚀 Live</a>
                 <a class="button small ghost" href="https://github.com/VinayakAsole/DSA_Visualizer_in_C" target="_blank" rel="noopener">Code</a>
               </div>
             </div>
@@ -180,6 +198,32 @@
         </div>
       </section>
 
+      <!-- ── GITHUB REPOS ── -->
+      <section id="github-repos" class="section container reveal">
+        <div class="section-head">
+          <h2>GitHub Repositories</h2>
+          <p>All public projects — fetched live from <a href="https://github.com/VinayakAsole" target="_blank" rel="noopener" class="inline-link">@VinayakAsole</a></p>
+        </div>
+        <div class="repo-filter-bar">
+          <button class="repo-filter-btn active" data-filter="all">All</button>
+          <button class="repo-filter-btn" data-filter="JavaScript">JavaScript</button>
+          <button class="repo-filter-btn" data-filter="TypeScript">TypeScript</button>
+          <button class="repo-filter-btn" data-filter="HTML">HTML</button>
+          <button class="repo-filter-btn" data-filter="SCSS">SCSS</button>
+        </div>
+        <div id="repoGrid" class="repo-grid">
+          <!-- Loaded by main.js -->
+          <div class="repo-loading">
+            <div class="loading-spinner"></div>
+            <p>Fetching repositories…</p>
+          </div>
+        </div>
+        <div class="repo-footer">
+          <a class="button" href="https://github.com/VinayakAsole?tab=repositories" target="_blank" rel="noopener">View all on GitHub →</a>
+        </div>
+      </section>
+
+      <!-- ── EXPERIENCE ── -->
       <section id="experience" class="section container reveal">
         <div class="section-head">
           <h2>Experience</h2>
@@ -187,6 +231,7 @@
         </div>
         <div class="timeline">
           <article class="time-item">
+            <div class="time-item-dot"></div>
             <h3>Student Developer <span>@ Academic Projects</span></h3>
             <p class="meta">2023 – Present</p>
             <ul>
@@ -195,6 +240,7 @@
             </ul>
           </article>
           <article class="time-item">
+            <div class="time-item-dot"></div>
             <h3>Project Lead <span>— Lazeez kitchen's (Cafe Management)</span></h3>
             <p class="meta">Current</p>
             <ul>
@@ -205,6 +251,7 @@
         </div>
       </section>
 
+      <!-- ── EDUCATION ── -->
       <section id="education" class="section container reveal">
         <div class="section-head">
           <h2>Education</h2>
@@ -212,33 +259,38 @@
         </div>
         <ul class="edu-list">
           <li>
-            <h3>Diploma in Computer Science and Engineering</h3>
-            <p class="meta">Government Polytechnic, Yavatmal • 2022 – 2025</p>
-            <p>Relevant coursework: Data Structures, Algorithms, DBMS, Operating Systems, Networks.</p>
+            <div class="edu-icon">🎓</div>
+            <div>
+              <h3>Diploma in Computer Science and Engineering</h3>
+              <p class="meta">Government Polytechnic, Yavatmal • 2022 – 2025</p>
+              <p>Relevant coursework: Data Structures, Algorithms, DBMS, Operating Systems, Networks.</p>
+            </div>
           </li>
-        </ul>
-        <ul class="edu-list">
           <li>
-            <h3>B.E. / B.Tech in Engineering</h3>
-            <p class="meta">JAGADAMBHA Collage of engineering and technology, Yavatmal • 2025 – 2028</p>
-            <p>Relevant coursework: Data Structures, Algorithms, DBMS, Operating Systems, Networks.</p>
+            <div class="edu-icon">🏛️</div>
+            <div>
+              <h3>B.E. / B.Tech in Engineering</h3>
+              <p class="meta">JAGADAMBA College of Engineering and Technology, Yavatmal • 2025 – 2028</p>
+              <p>Relevant coursework: Data Structures, Algorithms, DBMS, Operating Systems, Networks.</p>
+            </div>
           </li>
         </ul>
       </section>
 
+      <!-- ── CONTACT ── -->
       <section id="contact" class="section container reveal">
         <div class="section-head">
           <h2>Contact</h2>
-          <p>Let’s build something great. I’m available for roles and collaborations.</p>
+          <p>Let's build something great. I'm available for roles and collaborations.</p>
         </div>
         <form class="contact" name="contact" aria-label="Contact form">
           <div class="field">
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required />
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name" />
           </div>
           <div class="field">
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required />
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="your@email.com" />
           </div>
           <div class="field">
             <label for="location">Location (Optional)</label>
@@ -246,10 +298,10 @@
           </div>
           <div class="field">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project or opportunity…"></textarea>
           </div>
           <div class="actions">
-            <button class="button primary" type="submit">Send Message</button>
+            <button class="button primary" type="submit">Send Message ✉️</button>
           </div>
           <p class="form-note">Or reach me directly: <a href="mailto:vinayakasole1@gmail.com">vinayakasole1@gmail.com</a> · <a href="tel:+919373997279">+91 93739 97279</a></p>
         </form>
@@ -258,17 +310,50 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>© <span id="year"></span> Vinayak Asole • Built with HTML, CSS & JS</p>
+        <p>© <span id="year"></span> Vinayak Asole • Built with HTML, CSS &amp; JS</p>
         <ul class="social">
           <li><a href="https://github.com/VinayakAsole" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/vinayak-asole-b1212625a " target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
-          <li><a href="https://instagram.com/vinayak_____uv" target="_blank" rel="noopener" aria-label="Twitter">instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/vinayak-asole-b1212625a" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="https://instagram.com/vinayak_____uv" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a></li>
         </ul>
       </div>
     </footer>
 
+    <!-- ── CHATBOT ── -->
+    <div id="chatbotWidget" class="chatbot-widget" aria-live="polite">
+      <button id="chatbotToggle" class="chatbot-toggle" aria-label="Open chat assistant" aria-expanded="false">
+        <span class="chatbot-toggle-icon">💬</span>
+        <span class="chatbot-toggle-pulse"></span>
+      </button>
+      <div id="chatbotPanel" class="chatbot-panel" role="dialog" aria-label="Portfolio Assistant" aria-modal="true" hidden>
+        <div class="chatbot-header">
+          <div class="chatbot-avatar">🤖</div>
+          <div class="chatbot-info">
+            <span class="chatbot-name">Vinayak's Assistant</span>
+            <span class="chatbot-status">● Online</span>
+          </div>
+          <button id="chatbotClose" class="chatbot-close-btn" aria-label="Close chat">✕</button>
+        </div>
+        <div id="chatbotMessages" class="chatbot-messages">
+          <div class="chat-msg bot">
+            <div class="chat-bubble">
+              Hi! 👋 I'm Vinayak's portfolio assistant. Ask me anything about his skills, projects, education, or how to get in touch!
+            </div>
+          </div>
+          <div class="chat-quick-replies">
+            <button class="quick-reply" data-msg="What are your top projects?">🚀 Top Projects</button>
+            <button class="quick-reply" data-msg="What skills do you have?">💡 Skills</button>
+            <button class="quick-reply" data-msg="How can I contact Vinayak?">📬 Contact</button>
+            <button class="quick-reply" data-msg="Tell me about your education">🎓 Education</button>
+          </div>
+        </div>
+        <div class="chatbot-input-row">
+          <input id="chatbotInput" type="text" placeholder="Ask me anything…" autocomplete="off" aria-label="Chat input" />
+          <button id="chatbotSend" class="chatbot-send-btn" aria-label="Send message">➤</button>
+        </div>
+      </div>
+    </div>
+
     <script src="main.js" defer></script>
   </body>
-  </html>
-
-
+</html>
