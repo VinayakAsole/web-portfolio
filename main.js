@@ -265,7 +265,7 @@ loadGitHubRepos();
          🍽️ <b>restorent-website</b> — Restaurant landing page &nbsp;<a href="https://vinayakasole.github.io/restorent-website/" target="_blank">Live ↗</a><br>
          💰 <b>ExpenseForcast</b> — Budget tracker &nbsp;<a href="https://vinayakasole.github.io/ExpenseForcast/" target="_blank">Live ↗</a><br>
          🧩 <b>ridlegamev2</b> — Firebase riddle game &nbsp;<a href="https://vinayakasole.github.io/ridlegamev2/" target="_blank">Live ↗</a><br>
-         ☕ <b>Lazeez Kitchen's</b> — Cafe management system (in progress)`,
+         🍲 <b>FoodLoop</b> — Zero-food-waste PWA &nbsp;<a href="https://github.com/VinayakAsole/foodloop" target="_blank">Code ↗</a>`,
 
         `Vinayak has built <b>8+ projects</b>! 💪<br>
          Scroll to the <b>GitHub Repos</b> section to see all live links.<br><br>
@@ -319,10 +319,10 @@ loadGitHubRepos();
         `💼 Vinayak's experience:<br><br>
          <b>Student Developer</b> — Academic Projects (2023–Present)<br>
          Built web apps, collaborated on planning & testing.<br><br>
-         <b>Project Lead</b> — Lazeez Kitchen's Cafe Management (Current)<br>
+         <b>Project Lead & Developer</b> — FoodLoop Community Platform (Current)<br>
          Designing order flow, menu CRUD, billing & daily reports.`,
 
-        `Vinayak has been an active <b>Student Developer</b> since 2023. He currently leads the <b>Lazeez Kitchen's</b> cafe management system as Project Lead. 🚀`,
+        `Vinayak has been an active <b>Student Developer</b> since 2023. He currently leads the <b>FoodLoop</b> zero-food-waste community platform as Project Lead & Developer. 🚀`,
       ]
     },
     {

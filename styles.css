@@ -99,6 +99,7 @@ body {
 .card-media-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; opacity: .7; }
 .card-media--portfolio { background: linear-gradient(135deg, rgba(108,124,255,.25), rgba(34,211,238,.2)); }
 .card-media--cafe { background: linear-gradient(135deg, rgba(245,158,11,.2), rgba(239,68,68,.15)); }
+.card-media--foodloop { background: linear-gradient(135deg, rgba(16,185,129,.25), rgba(59,130,246,.2)); }
 .card-media--dsa { background: linear-gradient(135deg, rgba(34,197,94,.2), rgba(16,185,129,.15)); }
 .card-body { padding: 16px; display: grid; gap: 10px; }
 .card-body h3 { margin: 0; font-size: 18px; }
